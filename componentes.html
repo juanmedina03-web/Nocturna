@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Componentes - Rueda Nocturna</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased">
+
+  <!-- Header / Navegación -->
+  <header class="px-6 py-4 bg-slate-900/80 border-b border-slate-800 sticky top-0 z-50">
+    <div class="flex max-w-6xl flex-col items-center md:flex-row md:justify-between mx-auto gap-4">
+      <a href="#" class="text-xl font-bold text-amber-400">Rueda Nocturna</a>
+      
+      <nav aria-label="Navegación principal" class="hidden flex-wrap items-center justify-center md:flex gap-6">
+        <a href="#como-funciona" class="font-semibold text-slate-300 hover:text-amber-400 focus:outline-none focus:ring-2 focus:ring-amber-400 rounded px-1">¿Cómo funciona?</a>
+        <a href="#rutas" class="font-semibold text-slate-300 hover:text-amber-400 focus:outline-none focus:ring-2 focus:ring-amber-400 rounded px-1">Rutas</a>
+        <a href="#planes" class="font-semibold text-slate-300 hover:text-amber-400 focus:outline-none focus:ring-2 focus:ring-amber-400 rounded px-1">Planes</a>
+        <a href="#inscripcion" class="font-semibold text-slate-300 hover:text-amber-400 focus:outline-none focus:ring-2 focus:ring-amber-400 rounded px-1">Inscripción</a>
+      </nav>
+
+      <div class="flex flex-col sm:flex-row gap-3">
+        <a href="#inscripcion" class="px-4 py-2 rounded-lg bg-amber-500 text-slate-950 font-bold shadow-md hover:bg-amber-400 focus:outline-none focus:ring-4 focus:ring-amber-300 transition">
+          Inscríbete
+        </a>
+        <a href="#rutas" class="px-4 py-2 rounded-lg bg-slate-800 text-slate-200 font-medium shadow-sm hover:bg-slate-700 hover:text-white focus:outline-none focus:ring-4 focus:ring-slate-400 transition">
+          Ver rutas
+        </a>
+      </div>
+    </div>
+  </header> 
+  
+  <main class="min-h-screen px-6 py-12">
+    <div class="max-w-3xl mx-auto space-y-12">
+      
+      <!-- Cabecera -->
+      <header class="space-y-2">
+        <p class="text-sm font-semibold uppercase tracking-wider text-cyan-400">
+          Rueda Nocturna · Medellín
+        </p>
+        <h1 class="text-4xl font-bold text-white">
+          Componentes de Rueda Nocturna
+        </h1>
+        <p class="text-slate-400">
+          Esta página muestra los componentes de la interfaz de usuario de Rueda Nocturna, incluyendo botones, cards y alertas.
+        </p>
+      </header>
+
+      <!-- 1. Variantes de Botón -->
+      <section aria-labelledby="botones-titulo" class="space-y-4">
+        <h2 id="botones-titulo" class="text-2xl font-bold text-white">
+          Variantes de botón
+        </h2>
+
+        <div class="flex flex-col sm:flex-row gap-4">
+          <!-- Botón Principal -->
+          <a href="#ruta" class="px-5 py-2.5 rounded-xl bg-amber-500 text-slate-950 font-bold shadow-md hover:bg-amber-400 text-center transition focus:outline-none focus:ring-4 focus:ring-amber-300">
+            Botón principal
+          </a>
+
+          <!-- Botón Secundario -->
+          <a href="#ruta" class="px-5 py-2.5 rounded-xl bg-slate-800 text-slate-200 font-semibold shadow-sm hover:bg-slate-700 hover:text-white text-center transition focus:outline-none focus:ring-4 focus:ring-slate-400">
+            Botón secundario
+          </a>
+
+          <!-- Botón de Contorno (Outline) -->
+          <a href="#ruta" class="px-5 py-2.5 rounded-xl border-2 border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-slate-950 font-semibold text-center transition focus:outline-none focus:ring-4 focus:ring-cyan-300">
+            Botón de contorno
+          </a>
+        </div>
+      </section>
+
+      <!-- 2. Card de Ruta -->
+      <section id="ruta" aria-labelledby="ruta-titulo" class="space-y-4">
+        <h2 id="ruta-titulo" class="text-2xl font-bold text-white">
+          Card de ruta
+        </h2>
+
+        <article class="bg-slate-900 border border-slate-800 rounded-2xl shadow-lg overflow-hidden">
+          <img class="w-full h-64 object-cover" src="./img/recorrido%20de%20noche.jpeg" alt="Ciclistas recorriendo la ciudad de noche">
+
+          <div class="p-6 space-y-4">
+            <span class="inline-block bg-emerald-950 text-emerald-400 border border-emerald-800 text-xs font-semibold px-2.5 py-1 rounded-full uppercase">
+              Nivel fácil
+            </span>
+
+            <h3 class="text-3xl font-bold text-white">
+              Luces del Centro
+            </h3>
+
+            <p class="text-slate-400">
+              Un paseo tranquilo para descubrir el centro de Medellín al caer la noche.
+            </p>
+
+            <ul class="space-y-2 text-sm text-slate-300 pt-2 border-t border-slate-800">
+              <li><span class="text-slate-500">Distancia:</span> <span class="font-semibold text-white">10 km</span></li>
+              <li><span class="text-slate-500">Duración:</span> <span class="font-semibold text-white">2 h</span></li>
+              <li><span class="text-slate-500">Punto de encuentro:</span> <span class="font-semibold text-white">Sede de Rueda Libre</span></li>
+            </ul>
+
+            <p class="text-2xl font-bold text-cyan-400 pt-2">
+              $55.000
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <!-- 3. Alertas -->
+      <section aria-labelledby="alertas-titulo" class="space-y-4">
+        <h2 id="alertas-titulo" class="text-2xl font-bold text-white">
+          Alertas
+        </h2>
+
+        <div class="space-y-4">
+          <!-- Alerta de Información -->
+          <article class="rounded-xl p-4 border-l-4 border-cyan-400 bg-cyan-950/40 text-slate-200">
+            <h3 class="font-bold text-white">Información</h3>
+            <p class="mt-1 text-sm">La ruta comienza en la sede de Rueda Libre.</p>
+          </article>
+
+          <!-- Alerta de Éxito (con role="status" para lectores de pantalla) -->
+          <article role="status" class="rounded-xl p-4 border-l-4 border-emerald-400 bg-emerald-950/40 text-slate-200">
+            <h3 class="font-bold text-white">Éxito</h3>
+            <p class="mt-1 text-sm">¡Tu inscripción se completó correctamente!</p>
+          </article>
+
+          <!-- Alerta de Advertencia -->
+          <article class="rounded-xl p-4 border-l-4 border-amber-400 bg-amber-950/40 text-slate-200">
+            <h3 class="font-bold text-white">Advertencia</h3>
+            <p class="mt-1 text-sm">Recuerda llevar luces para la bicicleta.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- 4. Contáctos / Formulario -->
+      <section aria-labelledby="contacto-titulo" class="space-y-4">
+        <h2 id="contacto-titulo" class="text-2xl font-bold text-white">
+          Contáctos
+        </h2>
+
+        <form class="space-y-6 bg-slate-900 border border-slate-800 p-8 rounded-2xl shadow-xl">
+          
+          <!-- Campo Correo -->
+          <div class="space-y-2">
+            <label for="correo" role="text" class="block font-semibold text-slate-200">
+              Correo electrónico
+            </label>
+            <input
+              id="correo"
+              type="email"
+              name="correo"
+              placeholder="nombre@ejemplo.com"
+              aria-describedby="correo-ayuda"
+              class="block w-full rounded-xl border border-slate-700 bg-slate-950 px-4 py-3 text-white placeholder:text-slate-500 focus:outline-none focus:ring-4 focus:ring-cyan-400"
+            >
+            <p id="correo-ayuda" class="text-sm text-slate-400">
+              Usaremos tu correo para confirmar la inscripcion.
+            </p>
+          </div>
+
+          <!-- Campo Celular -->
+          <div class="space-y-2">
+            <label for="celular" role="text" class="block font-semibold text-slate-200">
+              Numero de celular
+            </label>
+            <input
+              id="celular"
+              type="tel"
+              name="celular"
+              placeholder="+57 300 000 0000"
+              aria-describedby="celular-ayuda"
+              class="block w-full rounded-xl border border-slate-700 bg-slate-950 px-4 py-3 text-white placeholder:text-slate-500 focus:outline-none focus:ring-4 focus:ring-cyan-400"
+            >
+            <p id="celular-ayuda" class="text-sm text-slate-400">
+              Escribe tu numero de celular para que podamos contactarte.
+            </p>
+          </div>
+
+        </form>
+      </section>
+
+    </div>
+  </main>
+
+</body>
+</html>
